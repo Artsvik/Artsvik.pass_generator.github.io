@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passwordgen.css">
+</head>
+
+<body>
+    <div class="password_line">
+        <h5 id="pwd_txt"></h5>
+    </div>
+    <div class="main"> PASSWORD GENERATOR
+        <div class="slider_main">
+            <input type="range" value="1" min="6" max="30" step="1" class="slider"
+                oninput="this.nextElementSibling.value = this.value" id="slider">
+            <output>6</output>
+        </div>
+        <button id="generate" class="button_main"></button>
+        <label class="container">Include Uppercase characters
+            <input type="checkbox" checked="checked1" id="checkbox1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Include Lowercase characters
+            <input type="checkbox" checked="checked2" id="checkbox2">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Include Numbers
+            <input type="checkbox" checked="checked3" id="checkbox3">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Include Symbols
+            <input type="checkbox" checked="checked4" id="checkbox4">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+
+
+
+    <script src="passwordgen.js"></script>
+</body>
+
+</html>
